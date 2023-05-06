@@ -31,6 +31,20 @@ function ubah($data){
     $deskripsi   = $_POST['deskripsi'];
     $harga       = $_POST['harga'];
 
+    //validasi harga
+        if ($harga <= 0) {
+            //menampilkan pesan 
+            echo "<script>
+                Swal.fire({
+                    title: 'Masukan harga dengan benar',
+                    icon: 'error',
+                    showConfirmButton: false,
+                    timer: 2000
+                }).then(function() {
+                window.location.href = 'update.php?id=<?php echo $id?>';});
+            </script>";
+        exit;}
+
     //upload gambar
     $gambar      = $_FILES['gambar']['name'];
     $tmp_name    = $_FILES['gambar']['tmp_name'];
