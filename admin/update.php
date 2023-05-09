@@ -1,12 +1,10 @@
 <?php
 
-//memasukan file kedalam halaman html
 include 'head.php';
-
-//koneksi ke database
 require '../koneksi.php';
 
-//pengecekan apakah id ada atau tidak
+
+// hak akses dapat dilakukan jika membawa id
 if(!isset($_GET['id'])){
     header('location: index.php');
     exit;
@@ -51,13 +49,6 @@ function ubah($data){
     $folder      = "../image/".$gambar;
 
     if($gambar!=""){
-        $query_lama = "SELECT gambar FROM produk WHERE id = '$id'";
-        $result_lama = mysqli_query($conn, $query_lama);
-        if(mysqli_num_rows($result_lama) == 1){
-            $row = mysqli_fetch_assoc($result_lama);
-            $folder_lama = "../image/".$row['gambar'];
-            unlink($folder_lama);
-        }
         move_uploaded_file($tmp_name,$folder);
         $query = "UPDATE produk SET 
                   nama      = '$nama',
@@ -65,7 +56,6 @@ function ubah($data){
                   deskripsi = '$deskripsi',
                   harga     = '$harga'
                   WHERE id  = '$id'";
-
     } else {
         $query = "UPDATE produk SET 
                   nama      = '$nama',
@@ -80,30 +70,18 @@ function ubah($data){
 
 if (isset($_POST["update"])){
     if (ubah($_POST) > 0){
-        //menampilkan pesan 
         echo "<script>
-            Swal.fire({
-                title: 'Data berhasil diupdate',
-                icon: 'success',
-                showConfirmButton: false,
-                timer: 1500,
-            }).then(function() {
-                window.location.href = 'view.php';});
+        alert('Berhasil Mengubah Data');
+        document.location.href='view.php';
         </script>";
-        
     } else {
-        //menampilkan pesan 
         echo "<script>
-            Swal.fire({
-                icon: 'error',
-                title: 'Ubah data yang ingin diubah',
-                showConfirmButton: false,
-                timer: 2000
-            });
-        </script>";
+        alert('Gagal Mengubah Data');
+        </script>";   
     }
 }
 ?>
+
 
 <section>
     <p class="h2 p-2 text-center">Update Produk</p>
@@ -142,4 +120,5 @@ if (isset($_POST["update"])){
             </div>
         </form>
 </section>
+
 <footer class="border">© 2023 - IT Development <span id="text">@Glamour </span>Shop - All Rights Reserved</footer>

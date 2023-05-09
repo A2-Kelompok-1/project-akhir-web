@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
     <header class="navbar bg-light border-bottom fixed-top">
@@ -23,6 +20,4 @@
         </div>
     </header>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4"></script>
-<script src="../script.js"></script>
 </html>
