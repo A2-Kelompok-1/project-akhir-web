@@ -41,7 +41,7 @@ function ubah($data){
                     showConfirmButton: false,
                     timer: 2000
                 }).then(function() {
-                window.location.href = 'update.php?id=<?php echo $id?>';});
+                window.location.href = 'view.php';});
             </script>";
         exit;}
 
