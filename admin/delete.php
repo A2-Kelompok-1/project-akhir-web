@@ -33,3 +33,6 @@ if($id){
     </script></body>";
 }
 ?>
+
+<!-- link CSS -->
+<link rel="stylesheet" href="../style.css">
