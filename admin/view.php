@@ -60,6 +60,7 @@ $result = mysqli_query($conn, $query);
     </div>
 </section>
 <footer class="border">© 2023 - IT Development <span id="text">@Glamour </span>Shop - All Rights Reserved</footer>
+<!-- Datatables -->
 <script>
         $(document).ready(function () {
             $('#example').DataTable();
