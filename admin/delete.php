@@ -21,20 +21,15 @@ if($id){
     mysqli_query($conn, $_query);
 
     //menampilkan pesan 
-    echo "<script>
-            alert('Berhasil Menghapus Data');
-            document.location.href = 'view.php';
-        </script>";
-
-    // echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10'></script>
-    // <script>
-    // Swal.fire({
-    //     icon: 'success',
-    //     title: 'Berhasil Menghapus Data',
-    //     showConfirmButton: false,
-    //     timer: 1500
-    // }).then(function() {
-    //     window.location.href = 'view.php';});
-    // </script>";
+    echo "<body><script src='https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10'></script>
+    <script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Berhasil Menghapus Data',
+        showConfirmButton: false,
+        timer: 1500
+    }).then(function() {
+        window.location.href = 'view.php';});
+    </script></body>";
 }
 ?>
