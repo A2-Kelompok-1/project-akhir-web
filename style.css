@@ -13,8 +13,20 @@
     --tertiary-color: rgba(109, 104, 104, 0.964);
 }
 
-.navbar{
+.navbar, #navbar{
     padding: 20px;
+}
+
+.bg-pink{
+    background-color: var(--main-color);
+}
+.btn-outline-pink{
+    background-color: var(--main-color);
+    color: var(--main-color);
+}
+.navbar-toggler-black-pink:focus, .navbar-toggler-black-pink:active {
+    background-color: pink;
+    border-color: pink;
 }
 
 span{
@@ -26,12 +38,22 @@ span{
     font-weight: bold;
 }
 
+#logo2{
+    color: var(--secondry-color);
+    font-weight: bold;
+    padding: 0px 50px;
+}
+
 #nav:hover, #text{
     color: var(--main-color);
 }
 
 section{
     padding: 5rem 0 3rem;
+}
+
+.section_user{
+    padding: 3rem 0 3rem;
 }
 
 footer{
@@ -51,4 +73,33 @@ footer{
 #text-info{
     color: var(--tertiary-color);
     padding-left: 10px;
+}
+
+th{
+    text-align: center;
+}
+
+.tentang{
+    padding: 10px 100px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#nav-user{
+    font-size: 15px;
+}
+
+#nav-user{
+    color: var(--secondry-color);
+    font-size: 18px;
+    padding: 0px 20px;
+}
+
+#nav-user:hover{
+    color: var(--netral-color);
+}
+
+#logo3{
+    color: var(--main-color);
+    padding: 0px 250px;
 }
