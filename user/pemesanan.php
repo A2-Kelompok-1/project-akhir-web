@@ -1,8 +1,4 @@
-<?php 
-
-include 'header.php';
-
-?>
+<?php include 'header.php'; ?>
 
 <div class="border border-1 shadow shadow-lg rounded" style=" padding: 30px; padding-bottom: 300px;">
     <table class="table table-striped">

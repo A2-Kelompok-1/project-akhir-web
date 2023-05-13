@@ -1,4 +1,4 @@
-<?php include 'header.html'; ?>
+<?php include 'header.php'; ?>
 
 <section>
     <div class="d-flex justify-content-center align-items-center">
@@ -7,7 +7,7 @@
                 <div class="text-center">
                     <h1>Selamat Datang <br> Di Glamour Shop</h1>
                     <p class="tentang text-center">Silakan Melakukan Pesanan</p>
-                    <a href="barang.php" class="btn btn-outline-success">Pesan Sekarang</a>
+                    <a href="barang.php" class="btn btn-outline-success">Barang</a>
                 </div>
             </div>
         </div>
