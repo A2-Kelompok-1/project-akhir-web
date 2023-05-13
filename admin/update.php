@@ -3,9 +3,6 @@
 //memasukan file kedalam halaman html
 include 'head.php';
 
-//koneksi ke database
-require '../koneksi.php';
-
 //pengecekan apakah id ada atau tidak
 if(!isset($_GET['id'])){
     header('location: index.php');

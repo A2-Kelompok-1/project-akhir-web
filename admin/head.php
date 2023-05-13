@@ -1,3 +1,11 @@
+<?php
+
+//koneksi ke database
+require '../koneksi.php';
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,5 +32,4 @@
     </header>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4"></script>
-<script src="../script.js"></script>
 </html>

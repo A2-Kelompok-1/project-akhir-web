@@ -3,9 +3,6 @@
 //memasukan file kedalam halaman html
 include 'head.php';
 
-//koneksi ke database
-require '../koneksi.php';
-
 //memeriksa tombol
 if(isset($_POST['tambah'])){
     $nama        =$_POST['nama'];

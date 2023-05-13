@@ -3,9 +3,6 @@
 //memasukan file kedalam halaman html
 include 'head.php';
 
-//koneksi ke database
-require '../koneksi.php';
-
 $query = "SELECT * FROM produk";
 $result = mysqli_query($conn, $query);
 ?>
