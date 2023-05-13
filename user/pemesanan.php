@@ -1,4 +1,8 @@
-<?php include 'layout/header.php' ?>
+<?php 
+
+include 'header.php';
+
+?>
 
 <div class="border border-1 shadow shadow-lg rounded" style=" padding: 30px; padding-bottom: 300px;">
     <table class="table table-striped">
@@ -33,4 +37,4 @@
     </table>
 </div>
 
-<?php include 'layout/footer.php' ?>
+<footer class="border">© 2023 - IT Development <span id="text">@Glamour </span>Shop - All Rights Reserved</footer>
