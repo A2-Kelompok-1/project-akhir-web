@@ -1,16 +1,3 @@
-<?php 
-
-//memulai sesi
-session_start();
-
-//memerikasi variabel role
-if(!isset($_SESSION['role'])) {
-    header('location:../login.php');
-    exit();
-}
-
-require '../koneksi.php'; ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +5,7 @@ require '../koneksi.php'; ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glamour Shop</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -42,7 +29,7 @@ require '../koneksi.php'; ?>
                     <a id="nav-user" class="nav-link" href="pemesanan.php">Pesanan</a>
                 </li>
                 <li class="nav-item">
-                    <a id="nav-user" class="nav-link" href="logout.php">Logout</a>
+                    <a id="nav-user" class="nav-link" href="login.php">Login</a>
                 </li>
             </ul>
         </div>

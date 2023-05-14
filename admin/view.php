@@ -1,6 +1,18 @@
 <?php
 
-//memasukan file kedalam halaman html
+//memulai sesi
+session_start();
+
+//memerikasi variabel role
+if(!isset($_SESSION['role'])) {
+    header('location:../login.php');
+	exit();
+}
+
+//koneksi ke database
+require '../koneksi.php';
+
+//memasukan file eksternal ke dalam skrip php
 include 'head.php';
 
 $query = "SELECT * FROM produk";
@@ -34,7 +46,7 @@ $result = mysqli_query($conn, $query);
 				<td><img src="../image/<?php echo $row['gambar'] ?>" width="150px"></td>
 				<td><?php echo $row['deskripsi']?></td>
 				<td><?php echo $row['harga']?></td>
-				<td><a href="update.php?id=<?php echo $row['id'] ?>"><i class="bi bi-pencil-square" id="ikon"></i></a></td>
+				<td><a href="update.php?id=<?php echo $row['id'] ?>"><i class="bi bi-pencil-square"></i></a></td>
 				<td><a onclick="event.preventDefault();
 					Swal.fire({
 						title: 'Anda yakin ingin menghapus data produk?',

@@ -1,6 +1,18 @@
 <?php
 
-//memasukan file kedalam halaman html
+//memulai sesi
+session_start();
+
+//memerikasi variabel role
+if(!isset($_SESSION['role'])) {
+    header('location:../login.php');
+    exit();
+}
+
+//koneksi ke database
+require '../koneksi.php';
+
+//memasukan file eksternal ke dalam skrip php
 include 'head.php';
 
 //pengecekan apakah id ada atau tidak
@@ -38,7 +50,7 @@ function ubah($data){
                     showConfirmButton: false,
                     timer: 2000
                 }).then(function() {
-                window.location.href = 'view.php';});
+                window.location.href = 'update.php';});
             </script>";
         exit;}
 

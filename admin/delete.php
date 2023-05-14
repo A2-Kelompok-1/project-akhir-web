@@ -1,5 +1,14 @@
 <?php
 
+//memulai sesi
+session_start();
+
+//memerikasi variabel role
+if(!isset($_SESSION['role'])) {
+    header('location:../login.php');
+    exit();
+}
+
 //koneksi ke database
 require '../koneksi.php';
 
@@ -20,7 +29,6 @@ if($id){
     $_query = "DELETE FROM produk WHERE id = $id";
     mysqli_query($conn, $_query);
 
-    //menampilkan pesan 
     echo "<body><script src='https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10'></script>
     <script>
     Swal.fire({

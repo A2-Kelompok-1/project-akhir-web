@@ -1,4 +1,17 @@
-<?php include 'header.php'; ?>
+<?php 
+
+//memulai sesi
+session_start();
+
+//memerikasi variabel role
+if(!isset($_SESSION['role'])) {
+    header('location:../login.php');
+    exit();
+}
+
+include 'header.php'; 
+
+?>
 
 <div class="border border-1 shadow shadow-lg rounded" style=" padding: 30px; padding-bottom: 100px;">
     <table class="table table-striped" id="example">

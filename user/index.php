@@ -1,4 +1,17 @@
-<?php include 'header.php'; ?>
+<?php 
+
+//memulai sesi
+session_start();
+
+//memerikasi variabel role
+if(!isset($_SESSION['role'])) {
+    header('location:../login.php');
+    exit();
+}
+
+include 'header.php'; 
+
+?>
 
 <section>
     <div class="d-flex justify-content-center align-items-center">
