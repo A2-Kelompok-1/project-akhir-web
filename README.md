@@ -2,7 +2,16 @@
 Glamour Shop merupakan sebuah toko yang menyediakan berbagai macam aksesoris berkualitas tinggi untuk meningkatkan gaya dan keindahan. Dengan berfokus pada tren terkini dan kebutuhan fashion, serta menawarkan beragam pilihan produk aksesoris yang elegan dan modis.
 
 ## ADMIN ##
-Apabila admin berhasil login pada sistem maka akan muncul tampilan beranda admin. Pada tampilan beranda admin, admin dapat melakukan pengelolahan data produk dan logout.
+Pada tampilan awal sistem Glamour Shop, Admin dapat melakukan login pada bagian login.
+[image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/22225495-63d6-4cdb-b71a-d78bf3723317)
+
+Kemudian apabila admin mengklik bagian login maka akan muncul tampilan login dan admin dapat memasukan username dan password yang telah terdaftar.
+![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/7cecee11-09d4-4f45-af30-59b850af3121)
+
+Setelah memasukan username dan password yang benar sistem akan menampilkan tampilan beranda.
+![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/0ca6ccbc-ba6d-477e-a290-c4618102cab7)
+
+Pada tampilan beranda admin, admin dapat melakukan pengelolahan data produk dan logout.
     ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/3c81578b-647b-480c-8a60-68ca67b21a0e)    
     
 Apabila admin ingin mengelolah data produk, maka admin dapat mengklik data produk.
@@ -54,8 +63,8 @@ Apabila admin melakukan searching pada kolom searching sesuai dengan kebutuhan d
 Apabila admin melakukan sorting admin dapat mengklik bagian yang berbentuk seperti bentuk diamond.
 ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/d73d3c54-c2b6-49da-9445-36462ed4d1eb)
 
-Apabila admin ingin keluar dari sistem, admin dapat mengklik logout maka sistem akan memunculkan tmpilan login
-![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/2aa526f6-08fc-4ecf-b930-68b7166086cf)
+Apabila admin ingin keluar dari sistem, admin dapat mengklik logout maka sistem akan memunculkan tampilan awal Glamor Shop (tampilan pertama kali admin melakukan login).
+[image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/22225495-63d6-4cdb-b71a-d78bf3723317)
 
 
 
