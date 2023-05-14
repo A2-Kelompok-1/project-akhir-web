@@ -27,7 +27,7 @@ if ($row) {
     session_start();
     // set a cookie to restrict access to the admin page
 if ($_SESSION['user_type'] === 'admin') {
-  setcookie('admin_access', 'allowed', time() + (86400 * 30), '/'); // set cookie for 30 days
+    setcookie('admin_access', 'allowed', time() + (86400 * 30), '/'); // set cookie for 30 days
 }
     $_SESSION['admin_id'] = $row['id'];
     $_SESSION['user_type'] = 'admin';
@@ -42,7 +42,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     // set session variables and redirect to staff page
 if ($_SESSION['user_type'] === 'staff') {
-      setcookie('staff_access', 'allowed', time() + (86400 * 30), '/'); // set cookie for 30 days
+    setcookie('staff_access', 'allowed', time() + (86400 * 30), '/'); // set cookie for 30 days
 }
     session_name($staff_session_name);
     session_start();
@@ -58,6 +58,9 @@ $stmt->execute([$username, $password]);
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 if ($row) {
     // set session variables and redirect to user page
+if ($_SESSION['user_type'] === 'user') {
+    setcookie('user_access', 'allowed', time() + (86400 * 30), '/'); // set cookie for 30 days
+}
     session_name($user_session_name);
     session_start();
     $_SESSION['user_id'] = $row['id'];
