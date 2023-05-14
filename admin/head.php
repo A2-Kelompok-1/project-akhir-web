@@ -26,7 +26,7 @@ require '../koneksi.php';
             </div>
             <div class="container-left">
                 <a id="nav" href="view.php" class="navbar-brand"><i class="bi bi-folder2-open"></i></i> Data Produk</a>
-                <a id="nav" href="#belum" class="navbar-brand">Logout <i class="bi bi-box-arrow-right"></i></a>
+                <a id="nav" href="logout.php" class="navbar-brand">Logout <i class="bi bi-box-arrow-right"></i></a>
             </div>
         </div>
     </header>

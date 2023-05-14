@@ -37,53 +37,25 @@ if(isset($_POST['submit'])){
    <title>register</title>
 
    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="../style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<style>
-		body {
-			background-color: #f7f7f7;
-		}
-		.form-signin {
-			max-width: 330px;
-			padding: 15px;
-			margin: 0 auto;
-			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-			background-color: #fff;
-			border-radius: 5px;
-		}
-		.form-signin input[type="text"], .form-signin input[type="username"], .form-signin input[type="password"] {
-			margin-bottom: 10px;
-		}
-	</style>
-
 </head>
-<body>
+<body id="registrasi">
 
-<div class="container d-flex justify-content-center align-items-center"
-      style="min-height: 100vh">
-      	<form class="border shadow p-3 rounded"
-      	      method="post" 
-      	      style="width: 450px;">
-      	      <h1 class="text-center p-3">REGISTER</h1>
-
-
-
-   
-<section class="form-container">
-
-   <form action="" enctype="multipart/form-data" method="POST">
-      <h3>register now</h3>
-      <input type="text" name="name" class="box" placeholder="enter your name" required></br></br>
-      <input type="username" name="username" class="box" placeholder="enter your username" required></br></br>
-      <input type="password" name="password" class="box" placeholder="enter your password" required></br></br>
-      <input type="password" name="cpass" class="box" placeholder="confirm your password" required></br></br>
-      <input type="submit" value="register now" class="btn" name="submit" ></br></br>
-      <p>already have an account? <a href="login.php">login now</a></p>
-   </form>
-
-</section>
-
+<div class="container">
+    <div class="form-container">
+        <h1>REGISTRASI</h1>
+        <form action="" enctype="multipart/form-data" method="POST">
+            <input type="text" name="name" class="box" placeholder="Masukan Nama" required></br></br>
+            <input type="username" name="username" class="box" placeholder="Masukan Username" required></br></br>
+            <input type="password" name="password" class="box" placeholder="Masukan Password" required></br></br>
+            <input type="password" name="cpass" class="box" placeholder="Konfirmasi Password" required></br></br>
+            <input type="submit" value="DAFTAR" class="btn" name="submit" ></br></br>
+            <p>Sudah punya akun? <a href="login.php">Login</a></p>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>

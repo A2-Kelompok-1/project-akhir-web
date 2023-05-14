@@ -31,7 +31,7 @@ if ($_SESSION['user_type'] === 'admin') {
 }
     $_SESSION['admin_id'] = $row['id'];
     $_SESSION['user_type'] = 'admin';
-    header("Location: admin.php");
+    header("Location: ../admin/index.php");
     exit();
 }
 
@@ -65,17 +65,20 @@ if ($_SESSION['user_type'] === 'user') {
     session_start();
     $_SESSION['user_id'] = $row['id'];
     $_SESSION['user_type'] = 'user';
-    header("Location: users.php");
+    header("Location: ../user/index.php");
     exit();
 } else {
   // alert if username or password is incorrect
-  echo '<script>alert("Invalid username or password. Please try again.")</script>';
-}
-  
-
-
-
-
+  echo '<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.10"></script>
+    <script>
+        Swal.fire({
+            icon: "error",
+            title: "Username atau Password Salah",
+            text: "Silahkan Coba Lagi"
+        });
+    </script>
+    </body>';}
 }
 
 ?>
@@ -89,46 +92,23 @@ if ($_SESSION['user_type'] === 'user') {
    <title>login</title>
 
    <!-- font awesome cdn link  -->
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="../style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<style>
-		body {
-			background-color: #f7f7f7;
-		}
-		.login-form {
-			margin-top: 50px;
-			padding: 25px;
-			background-color: #fff;
-			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-			border-radius: 5px;
-		}
-	</style>
-
 </head>
-<body>
+<body id="login">
 
-<div class="container d-flex justify-content-center align-items-center"
-      style="min-height: 100vh">
-      	<form class="border shadow p-3 rounded"
-      	      method="post" 
-      	      style="width: 450px;">
-      	      <h1 class="text-center p-3">LOGIN</h1>
-
-
-   
-<section class="form-container">
-
-   <form action="" method="POST">
-      <h3>Login now</h3></br>
-      <input type="username" name="username" class="box" placeholder="enter your username" required></br></br>
-      <input type="password" name="password" class="box" placeholder="enter your password" required></br></br>
-      <input type="submit" value="login now" class="btn" name="submit"></br></br>
-      <p>don't have an account? <a href="register.php">register now</a></p>
-   </form>
-
-</section>
-
+<div class="container">
+    <div class="form-container">
+        <h1>LOGIN</h1>
+        <form action="" method="POST">
+        <input type="username" name="username" class="box" placeholder="Masukkan Username" required><br><br>
+        <input type="password" name="password" class="box" placeholder="Masukkan Password" required><br><br>
+        <input type="submit" value="LOGIN" class="btn" name="submit"><br><br>
+        <p>Belum punya akun? <a href="register.php">Registrasi</a></p>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
