@@ -1,3 +1,10 @@
+<?php 
+if (!isset($_COOKIE['admin_access'])) {
+    header("Location: login.php"); // redirect to login page
+    exit();
+}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
