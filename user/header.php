@@ -42,7 +42,7 @@ require '../koneksi.php'; ?>
                     <a id="nav-user" class="nav-link" href="pemesanan.php">Pesanan</a>
                 </li>
                 <li class="nav-item">
-                    <a id="nav-user" class="nav-link" href="logout.php">Logout</a>
+                    <a id="nav-user" class="nav-link" href="../logout.php">Logout</a>
                 </li>
             </ul>
         </div>

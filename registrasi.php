@@ -47,7 +47,7 @@ if(isset($_POST['registrasi'])) {
    <link rel="stylesheet" href="style.css">
 </head>
 <body id="registrasi">
-    <div class="container">
+    <div id="container" class="container">
         <div class="form-container">
             <h1>REGISTRASI</h1>
             <form action="" enctype="multipart/form-data" method="POST">

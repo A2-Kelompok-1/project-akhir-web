@@ -1,17 +1,5 @@
 <?php
 
-//memulai sesi
-session_start();
-
-//memerikasi variabel role
-if(!isset($_SESSION['role'])) {
-    header('location:../login.php');
-    exit();
-}
-
-//koneksi ke database
-require '../koneksi.php';
-
 //memasukan file eksternal ke dalam skrip php
 include 'head.php';
 

@@ -91,7 +91,7 @@ if(isset($_POST['login'])) {
    <link rel="stylesheet" href="style.css">
 </head>
 <body id="login">
-    <div class="container">
+    <div id="container" class="container">
         <div class="form-container">
             <h1>LOGIN</h1>
             <form action="" method="POST">

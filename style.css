@@ -108,9 +108,9 @@ th{
 
 /* Bagian Login dan Register */
 #login, #registrasi{
-    background-image: url("../project-akhir-web/image/bg.jpeg");
+    background-image: url("image/bg.jpeg");
   }
-  .container {
+  #container {
     min-height: 100vh;
     display: flex;
     justify-content: center;

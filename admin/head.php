@@ -7,6 +7,9 @@ if(!isset($_SESSION['role'])) {
     header('location:../login.php');
     exit();
 }
+//koneksi ke database
+require '../koneksi.php';
+
 ?>
 
 <!DOCTYPE html>
