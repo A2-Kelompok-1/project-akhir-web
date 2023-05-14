@@ -28,11 +28,15 @@
                 <li class="nav-item">
                     <a id="nav-user" class="nav-link" href="login.php">Pesan</a>
                 </li>
+                <li class="nav-item">
+                    <a id="nav-user" class="nav-link" href="login.php">Login</a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <section>
+    <p class="h1 p-3 text-center">SELAMAT DATANG DI GLAMOUR SHOP</p>
         <div id="about" class="awal">
             <p class="h3 text-center">Tentang Kami</p>
             <p class="tentang">Glamour Shop adalah sebuah toko yang menyediakan berbagai macam aksesoris berkualitas 
