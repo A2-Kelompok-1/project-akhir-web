@@ -3,7 +3,7 @@ Glamour Shop merupakan sebuah toko yang menyediakan berbagai macam aksesoris ber
 
 ## ADMIN ##
 Pada tampilan awal sistem Glamour Shop, Admin dapat melakukan login pada bagian login.
-[image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/22225495-63d6-4cdb-b71a-d78bf3723317)
+![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/57548d66-d012-4489-94b9-5c7144bfc792)
 
 Kemudian apabila admin mengklik bagian login maka akan muncul tampilan login dan admin dapat memasukan username dan password yang telah terdaftar.
 ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/7cecee11-09d4-4f45-af30-59b850af3121)
@@ -64,7 +64,7 @@ Apabila admin melakukan sorting admin dapat mengklik bagian yang berbentuk seper
 ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/d73d3c54-c2b6-49da-9445-36462ed4d1eb)
 
 Apabila admin ingin keluar dari sistem, admin dapat mengklik logout maka sistem akan memunculkan tampilan awal Glamor Shop (tampilan pertama kali admin melakukan login).
-[image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/22225495-63d6-4cdb-b71a-d78bf3723317)
+![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/6dcc4601-1d8f-4d75-8c6a-d20b97010ab5)
 
 
 
