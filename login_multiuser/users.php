@@ -1,5 +1,5 @@
 <?php 
-if (!isset($_COOKIE['admin_access'])) {
+if (!isset($_COOKIE['user_access'])) {
     header("Location: login.php"); // redirect to login page
     exit();
 }
