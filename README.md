@@ -8,7 +8,10 @@ Pada tampilan awal sistem Glamour Shop, Admin dapat melakukan login pada bagian 
 Kemudian apabila admin mengklik bagian login maka akan muncul tampilan login dan admin dapat memasukan username dan password yang telah terdaftar.
 ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/7cecee11-09d4-4f45-af30-59b850af3121)
 
-Setelah memasukan username dan password yang benar sistem akan menampilkan tampilan beranda.
+Apabila admin memasukan username dan password dengan salah (tidak sesuai dengan database/data tidak terdaftar) maka sistem akan menampilkan tampilan username dan password salah.
+![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/98ffbb13-f6f1-489e-81dc-55297f9ffda5)
+
+Apabila admin memasukan username dan password dengan benar (sesuai dengan database/data yang terdaftar) maka sistem akan menampilkan tampilan beranda.
 ![image](https://github.com/A2-Kelompok-1/project-akhir-web/assets/119858991/0ca6ccbc-ba6d-477e-a290-c4618102cab7)
 
 Pada tampilan beranda admin, admin dapat melakukan pengelolahan data produk dan logout.
