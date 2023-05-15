@@ -72,14 +72,36 @@ Apabila admin ingin keluar dari sistem, admin dapat mengklik logout maka sistem 
 
 
 ## USER ##
-- Tampilan Beranda User
-- Tampilang Barang 
-   - Tampilan Mencari Barang berdasarkan (Nomor, Nama , Gambar produk, Deskripsi, Harga)
-   - Tampilan Lihat Barang
+- Tampilan Untuk User melakukan login (Dengan menginputkan username dan password)
+![Screenshot (50)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/898c0c98-b925-4ddc-97a5-5185104e4539)
+
+- Tampilan untuk user registrasi akun, apabila belum memiliki akun (Dengan menginputkan Nama, Username dan Password)
+![Screenshot (51)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/645d8783-5a29-44bb-835d-6f4104c645fc)
+
+- Tampilan Beranda User (Pilih Menu Pesan untuk membeli produk)
+![Screenshot (41)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/3b79205b-32fd-402e-8430-cb916ab029c3)
+
+- Tampilang Pesan 
+   - Tampilan Mencari Produk berdasarkan (Nama Produk)
+  ![Screenshot (43)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/c73536b0-8184-4412-a51d-268e28d8ec58)
+  
+   - Tampilan Lihat Barang (Pilih Menu Produk)
+  ![Screenshot (49)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/a42ea0f2-3910-464d-9b01-2c10d323b199)
+
    - Tampilan Beli Barang
+  ![Screenshot (45)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/31152785-b300-4089-829d-6f4b1c788c73)
+
    - Tampilan Tambah Jumlah Beli Barang
+  ![Screenshot (46)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/ce73f202-5c33-46a4-af0f-895d7bde27ea)
+
    - Tampilan Total Harga Barang
+  ![Screenshot (46)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/98d9efbc-7e43-4d0e-8f7c-0c0691e7e8ab)
+
 - Tampilan Pemesanan
    - Tampilan Jumlah Barang yang Sudah Dibeli
+  ![Screenshot (47)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/2ac3918c-90a7-40b4-afca-2b362d797678)
+
    - Tampilan Jumlah Harga Barang yang Sudah Dibeli
-- Tampilan Logout
+  ![Screenshot (47)](https://github.com/A2-Kelompok-1/project-akhir-web/assets/120262860/fa8730f5-21c4-4afe-8d20-c10d236b5c63)
+
+- 
