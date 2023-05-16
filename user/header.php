@@ -4,11 +4,10 @@
 session_start();
 
 //memerikasi variabel role
-if(!isset($_SESSION['role'])) {
+if($_SESSION['role'] != 'user') {
     header('location:../login.php');
     exit();
 }
-
 require '../koneksi.php'; ?>
 
 <!DOCTYPE html>

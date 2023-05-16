@@ -4,7 +4,7 @@
 session_start();
 
 //memerikasi variabel role
-if(!isset($_SESSION['role'])) {
+if($_SESSION['role'] != 'admin') {
     header('location:../login.php');
     exit();
 }
