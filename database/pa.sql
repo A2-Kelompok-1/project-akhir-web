@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Bulan Mei 2023 pada 23.37
--- Versi server: 10.4.27-MariaDB
--- Versi PHP: 8.0.25
+-- Waktu pembuatan: 16 Bulan Mei 2023 pada 05.53
+-- Versi server: 10.4.22-MariaDB
+-- Versi PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -29,18 +29,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `pemesanan` (
   `id` int(11) NOT NULL,
+  `id_pemesanan` int(11) NOT NULL,
+  `id_user` int(11) NOT NULL,
   `id_produk` int(11) NOT NULL,
   `jumlah` int(11) NOT NULL,
-  `total_harga` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `total_harga` int(11) NOT NULL,
+  `status_pesanan` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `pemesanan`
 --
 
-INSERT INTO `pemesanan` (`id`, `id_produk`, `jumlah`, `total_harga`) VALUES
-(3, 4, 1, 60000),
-(4, 8, 2, 150000);
+INSERT INTO `pemesanan` (`id`, `id_pemesanan`, `id_user`, `id_produk`, `jumlah`, `total_harga`, `status_pesanan`) VALUES
+(3, 1, 0, 4, 1, 60000, 0),
+(4, 2, 0, 8, 2, 150000, 0);
 
 -- --------------------------------------------------------
 
@@ -54,7 +57,7 @@ CREATE TABLE `produk` (
   `gambar` varchar(255) NOT NULL,
   `deskripsi` text NOT NULL,
   `harga` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `produk`
@@ -80,6 +83,22 @@ INSERT INTO `produk` (`id`, `nama`, `gambar`, `deskripsi`, `harga`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `produksi`
+--
+
+CREATE TABLE `produksi` (
+  `id_produksi` int(2) NOT NULL,
+  `id_user` int(4) NOT NULL,
+  `id_produk` int(2) NOT NULL,
+  `id_pemesanan` int(11) NOT NULL,
+  `jumlah` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
+  `status` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `users`
 --
 
@@ -89,7 +108,7 @@ CREATE TABLE `users` (
   `username` varchar(20) NOT NULL,
   `password` varchar(10) NOT NULL,
   `role` enum('admin','staf','user') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `users`
@@ -104,10 +123,22 @@ INSERT INTO `users` (`id_user`, `nama`, `username`, `password`, `role`) VALUES
 --
 
 --
+-- Indeks untuk tabel `pemesanan`
+--
+ALTER TABLE `pemesanan`
+  ADD PRIMARY KEY (`id_pemesanan`);
+
+--
 -- Indeks untuk tabel `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `produksi`
+--
+ALTER TABLE `produksi`
+  ADD PRIMARY KEY (`id_produksi`);
 
 --
 -- Indeks untuk tabel `users`
@@ -118,6 +149,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
+
+--
+-- AUTO_INCREMENT untuk tabel `pemesanan`
+--
+ALTER TABLE `pemesanan`
+  MODIFY `id_pemesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `produk`
